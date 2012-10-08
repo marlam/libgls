@@ -529,14 +529,18 @@ void glsDrawSubmittedViews(GLScontext* ctx, GLSmode mode, GLboolean swapViews);
  * \param ctx           The GLS context.
  * \param mode          The stereoscopic display mode.
  * \param swapViews     Whether to swap left and right view.
- * \param viewTextures  The textures containing the views to be rendered.
+ * \param leftViewTexture  The texture containing the left view.
+ * \param rightViewTexture The texture containing the right view.
  *
- * Renders the given views in the given mode.
+ * Renders the given views in the given mode. If a view is not available, its texture
+ * can be zero. In this case, libgls will simply use the other texture for both views
+ * if required by the display mode.
  *
  * The result is rendered into the current GL_DRAW_BUFFER.
  */
 extern GLS_EXPORT
-void glsDrawViews(GLScontext* ctx, GLSmode mode, GLboolean swapViews, const GLuint* viewTextures);
+void glsDrawViews(GLScontext* ctx, GLSmode mode, GLboolean swapViews,
+        GLuint leftViewTexture, GLuint rightViewTexture);
 
 /**
  * \brief               Draw optional DLP 3D Ready Sync markers.

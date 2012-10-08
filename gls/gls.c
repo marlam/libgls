@@ -540,17 +540,18 @@ void glsSubmitView(GLScontext* ctx, GLSview view)
 
 void glsDrawSubmittedViews(GLScontext* ctx, GLSmode mode, GLboolean swap_views)
 {
-    GLuint view_textures[2] = { 0, 0 };
+    GLuint left_tex = 0, right_tex = 0;
     if (ctx->have_view[0])
-        view_textures[0] = ctx->view_tex[0];
+        left_tex = ctx->view_tex[0];
     if (ctx->have_view[1])
-        view_textures[1] = ctx->view_tex[1];
-    glsDrawViews(ctx, mode, swap_views, view_textures);
+        right_tex = ctx->view_tex[1];
+    glsDrawViews(ctx, mode, swap_views, left_tex, right_tex);
 }
 
 void glsDrawViews(GLScontext* ctx, GLSmode mode, GLboolean swap_views,
-        const GLuint* view_textures)
+        GLuint left_tex, GLuint right_tex)
 {
+    GLuint view_textures[2] = { left_tex, right_tex };
     GLint viewport[4];
     GLint current_program_bak;
     GLint active_texture_bak;
