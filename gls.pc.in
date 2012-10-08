@@ -6,12 +6,13 @@
 # notice are preserved. This file is offered as-is, without any warranty.
 
 prefix=@prefix@
+exec_prefix=@exec_prefix@
 libdir=@libdir@
 includedir=@includedir@
 
 Name: gls
 Description: Library for stereoscopic rendering with OpenGL
 Version: @GLS_VERSION@
-Requires.private: glewmx
 Libs: -L${libdir} -lgls
+Libs.private: -l@GLEWMX_LIBRARIES@
 Cflags: -I${includedir}
