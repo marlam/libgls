@@ -68,10 +68,10 @@
  *
  * Or, if you want to manage the views yourself:
  * \code
- * GLuint view_textures[2];
- * // ... render left view into view_texture[0] ...
- * // ... render right view into view_texture[1] ...
- * glsDrawViews(ctx, GLS_MODE_RED_CYAN_DUBOIS, GL_FALSE, view_textures);
+ * GLuint left_texture, right_texture;
+ * // ... render left view into left_texture ...
+ * // ... render right view into right_texture ...
+ * glsDrawViews(ctx, GLS_MODE_RED_CYAN_DUBOIS, GL_FALSE, left_texture, right_texture);
  * \endcode
  *
  * Cleanup:
