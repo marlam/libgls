@@ -98,8 +98,8 @@ if(GLS_BUILD_DOCUMENTATION)
     COMMENT "Generating API documentation with Doxygen" VERBATIM
   )
   add_custom_target(doc ALL DEPENDS "${GLS_BINARY_DIR}/doc/html/index.html")
-  install(DIRECTORY "${GLS_BINARY_DIR}/doc/html" DESTINATION share/doc)
-  install(FILES "${GLS_SOURCE_DIR}/doc/FindGLS.cmake" DESTINATION share/doc)
+  install(DIRECTORY "${GLS_BINARY_DIR}/doc/html" DESTINATION share/doc/libgls)
+  install(FILES "${GLS_SOURCE_DIR}/doc/FindGLS.cmake" DESTINATION share/doc/libgls)
 endif()
 
 # Extra target: 'make dist' for making
