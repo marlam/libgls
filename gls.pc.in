@@ -14,5 +14,5 @@ Name: gls
 Description: Library for stereoscopic rendering with OpenGL
 Version: @GLS_VERSION@
 Libs: -L${libdir} -lgls
-Libs.private: -l@GLEWMX_LIBRARIES@
+Libs.private: @GLS_PKGCONFIG_LIBRARIES_PRIVATE@
 Cflags: -I${includedir}
