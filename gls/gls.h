@@ -563,4 +563,8 @@ void glsDrawDLP3dReadySyncMarker(GLScontext* ctx, GLSmode mode);
 
 /*@}*/
 
+#ifdef __cplusplus
+}
+#endif
+
 #endif
