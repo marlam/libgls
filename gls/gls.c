@@ -610,9 +610,14 @@ void glsDrawViews(GLScontext* ctx, GLSmode mode, GLboolean swap_views,
     glDisable(GL_BLEND);
     glDisable(GL_FOG);
     glDisable(GL_NORMALIZE);
-    glDisableClientState(GL_COLOR_ARRAY | GL_EDGE_FLAG_ARRAY | GL_FOG_COORD_ARRAY
-            | GL_INDEX_ARRAY | GL_NORMAL_ARRAY | GL_SECONDARY_COLOR_ARRAY
-            | GL_TEXTURE_COORD_ARRAY | GL_VERTEX_ARRAY);
+    glDisableClientState(GL_COLOR_ARRAY);
+    glDisableClientState(GL_EDGE_FLAG_ARRAY);
+    glDisableClientState(GL_FOG_COORD_ARRAY);
+    glDisableClientState(GL_INDEX_ARRAY);
+    glDisableClientState(GL_NORMAL_ARRAY);
+    glDisableClientState(GL_SECONDARY_COLOR_ARRAY);
+    glDisableClientState(GL_TEXTURE_COORD_ARRAY);
+    glDisableClientState(GL_VERTEX_ARRAY);
     glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
     glEnable(GL_TEXTURE_2D);
     if (mode == GLS_MODE_EVEN_ODD_ROWS && ctx->even_odd_rows_mask_tex == 0) {
