@@ -284,10 +284,10 @@ void glsDestroyContext(GLScontext* ctx);
  * \param view          The view.
  *
  * This is a stereoscopic drop-in replacement for glFrustum().
- * It sets up an off-axis, asymmetric viewing frustum to render the
- * given view. In addition, you need to shift your scene to the right
- * by half the eye separation; glsLookAt() will do that automatically
- * for you.
+ * It sets up an asymmetric viewing frustum to render the given view.
+ * In addition, you need to shift your scene sideways by half the eye separation
+ * (shift left for the left view and right for the right view);
+ * glsLookAt() will do that automatically for you.
  *
  * See http://www.opengl.org/sdk/docs/man/xhtml/glFrustum.xml
  * for a description of the glFrustum() parameters \a left , \a right,
@@ -324,10 +324,10 @@ void glsFrustum(GLdouble left, GLdouble right, GLdouble bottom, GLdouble top,
  * \param view          The view.
  *
  * This is a stereoscopic drop-in replacement for gluPerspective().
- * It sets up an off-axis, asymmetric viewing frustum to render the
- * given view. In addition, you need to shift your scene to the right
- * by half the eye separation; glsLookAt() will do that automatically
- * for you.
+ * It sets up an asymmetric viewing frustum to render the given view.
+ * In addition, you need to shift your scene sideways by half the eye separation
+ * (shift left for the left view and right for the right view);
+ * glsLookAt() will do that automatically for you.
  *
  * See http://www.opengl.org/sdk/docs/man/xhtml/gluPerspective.xml
  * for a description of the gluPerspective() parameters \a fovy, \a aspect, \a zNear,
