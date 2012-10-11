@@ -13,12 +13,14 @@ macro(STRINGIFY_SHADERS)
     set(OUTPUT_FILES ${OUTPUT}.h)
     add_custom_command(OUTPUT ${OUTPUT_FILES}
       COMMAND ${CMAKE_COMMAND} -DSTRINGIFY_SHADERS_PROCESSING_MODE=ON
-        -DINPUT="${INPUT}" -DOUTPUT="${OUTPUT}"
+        -DINPUT=${INPUT} -DOUTPUT=${OUTPUT}
         -P ${CMAKE_SOURCE_DIR}/cmake/StringifyShaders.cmake
       DEPENDS ${INPUT}
+      COMMENT "Stringifying shader source code"
+      VERBATIM
     )
-  endforeach(FILE ${ARGN})
-endmacro(STRINGIFY_SHADERS)
+  endforeach()
+endmacro()
 
 if(NOT STRINGIFY_SHADERS_PROCESSING_MODE)
   return()
