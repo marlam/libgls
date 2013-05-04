@@ -1,7 +1,7 @@
 /*
  * This file is part of libgls, a library for stereoscopic OpenGL rendering.
  *
- * Copyright (C) 2012
+ * Copyright (C) 2012, 2013
  * Martin Lambers <marlam@marlam.de>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
@@ -131,7 +131,7 @@ void keyboard(unsigned char key, int x, int y)
         fullscreen = !fullscreen;
         if (fullscreen) {
             fullscreen_window_x_bak = glutGet(GLUT_WINDOW_X);
-            fullscreen_window_y_bak = glutGet(GLUT_WINDOW_X);
+            fullscreen_window_y_bak = glutGet(GLUT_WINDOW_Y);
             fullscreen_window_w_bak = glutGet(GLUT_WINDOW_WIDTH);
             fullscreen_window_h_bak = glutGet(GLUT_WINDOW_HEIGHT);
             glutFullScreen();
