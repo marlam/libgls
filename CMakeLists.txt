@@ -1,4 +1,4 @@
-# Copyright (C) 2012
+# Copyright (C) 2012, 2013
 # Martin Lambers <marlam@marlam.de>
 #
 # Copying and distribution of this file, with or without modification, are
@@ -84,9 +84,9 @@ if(GLS_BUILD_TEST)
   set_target_properties(test_program PROPERTIES OUTPUT_NAME gls-test)
   include_directories("${GLUT_INCLUDE_DIR}" "${GLS_SOURCE_DIR}" "${GLS_BINARY_DIR}")
   if(GLS_BUILD_SHARED_LIB)
-    target_link_libraries(test_program ${GLUT_glut_LIBRARY} ${OPENGL_gl_LIBRARY} libgls_shared)
+    target_link_libraries(test_program m ${GLUT_glut_LIBRARY} ${OPENGL_gl_LIBRARY} libgls_shared)
   else()
-    target_link_libraries(test_program ${GLUT_glut_LIBRARY} libgls_static ${GLEWMX_LIBRARIES} ${OPENGL_gl_LIBRARY})
+    target_link_libraries(test_program m ${GLUT_glut_LIBRARY} libgls_static ${GLEWMX_LIBRARIES} ${OPENGL_gl_LIBRARY})
   endif()
   install(TARGETS test_program RUNTIME DESTINATION bin)
 endif()
