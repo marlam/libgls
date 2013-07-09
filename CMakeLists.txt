@@ -20,7 +20,7 @@ option(GLS_BUILD_DOCUMENTATION "Build API reference documentation (requires Doxy
 # Libgls version
 set(GLS_VERSION_MAJOR "1")
 set(GLS_VERSION_MINOR "0")
-set(GLS_VERSION_PATCH "0")
+set(GLS_VERSION_PATCH "1")
 set(GLS_VERSION ${GLS_VERSION_MAJOR}.${GLS_VERSION_MINOR}.${GLS_VERSION_PATCH})
 set(GLS_LIB_VERSION "0.0.0")
 set(GLS_LIB_SOVERSION "0")
