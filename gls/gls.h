@@ -1,7 +1,7 @@
 /*
  * This file is part of libgls, a library for stereoscopic OpenGL rendering.
  *
- * Copyright (C) 2012
+ * Copyright (C) 2012, 2013
  * Martin Lambers <marlam@marlam.de>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
@@ -88,7 +88,7 @@
  * do that for you; they are drop-in replacements for glFrustum() /
  * gluPerspective() and gluLookAt().
  *
- * See http://paulbourke.net/miscellaneous/stereographics/stereorender/
+ * See http://paulbourke.net/stereographics/stereorender/
  * for more information on this topic.
  */
 
