@@ -289,7 +289,7 @@ void glsDestroyContext(GLScontext* ctx);
  * (shift left for the left view and right for the right view);
  * glsLookAt() will do that automatically for you.
  *
- * See http://www.opengl.org/sdk/docs/man/xhtml/glFrustum.xml
+ * See http://www.opengl.org/sdk/docs/man2/xhtml/glFrustum.xml
  * for a description of the glFrustum() parameters \a left , \a right,
  * \a bottom, \a top, \a zNear, and \a zFar.
  *
@@ -305,7 +305,7 @@ void glsDestroyContext(GLScontext* ctx);
  *
  * The \a view parameter selects the left or right view.
  *
- * See http://paulbourke.net/miscellaneous/stereographics/stereorender/
+ * See http://paulbourke.net/stereographics/stereorender/
  * for more information on how to set up stereoscopic views.
  */
 extern GLS_EXPORT
@@ -329,7 +329,7 @@ void glsFrustum(GLdouble left, GLdouble right, GLdouble bottom, GLdouble top,
  * (shift left for the left view and right for the right view);
  * glsLookAt() will do that automatically for you.
  *
- * See http://www.opengl.org/sdk/docs/man/xhtml/gluPerspective.xml
+ * See http://www.opengl.org/sdk/docs/man2/xhtml/gluPerspective.xml
  * for a description of the gluPerspective() parameters \a fovy, \a aspect, \a zNear,
  * and \a zFar.
  *
@@ -345,7 +345,7 @@ void glsFrustum(GLdouble left, GLdouble right, GLdouble bottom, GLdouble top,
  *
  * The \a view parameter selects the left or right view.
  *
- * See http://paulbourke.net/miscellaneous/stereographics/stereorender/
+ * See http://paulbourke.net/stereographics/stereorender/
  * for more information on how to set up stereoscopic views.
  */
 extern GLS_EXPORT
@@ -371,7 +371,7 @@ void glsPerspective(GLdouble fovy, GLdouble aspect, GLdouble zNear, GLdouble zFa
  * on the view. In addition, you need to set up an off-axis, asymmetric
  * viewing frustum; glsPerspective() will do that automatically for you.
  *
- * See http://www.opengl.org/sdk/docs/man/xhtml/gluLookAt.xml
+ * See http://www.opengl.org/sdk/docs/man2/xhtml/gluLookAt.xml
  * for a description of the gluLookAt() parameters \a eyeX, \a eyeY, \a eyeZ,
  * \a centerX, \a centerY, \a centerZ, \a upX, \a upY, and \a upZ.
  *
@@ -380,7 +380,7 @@ void glsPerspective(GLdouble fovy, GLdouble aspect, GLdouble zNear, GLdouble zFa
  *
  * The \a view parameter selects the left or right view.
  *
- * See http://paulbourke.net/miscellaneous/stereographics/stereorender/
+ * See http://paulbourke.net/stereographics/stereorender/
  * for more information on how to set up stereoscopic views.
  */
 void glsLookAt(GLdouble eyeX, GLdouble eyeY, GLdouble eyeZ,
