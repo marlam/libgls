@@ -1,4 +1,0 @@
-Libgls is a library for stereoscopic rendering using OpenGL.
-
-It supports a wide variety of stereoscopic display modes, and it does not
-depend on OpenGL quad-buffer support.
