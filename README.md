@@ -12,5 +12,6 @@ Libgls is available under the MIT/X11 license, which means it can be used both
 in free and proprietary software without problems.
 
 Requirements:
+
 - [GLEW MX](http://glew.sourceforge.net/)
 - [GLUT](http://freeglut.sourceforge.net/) (optional, only used for the example program)
